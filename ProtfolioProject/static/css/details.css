@@ -1,0 +1,39 @@
+body{
+    background-image: url('/static/images/11.jpeg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+
+}
+.conatiner{
+    padding-top: 30px;
+}
+
+h1{
+    padding-top: 30px;
+    padding-left: 70px;
+    background: red;
+    color: white;
+}
+
+#pg{
+    padding-left: 70px;
+    color:red;
+}
+p{
+    padding-left: 70px;
+    color: red;
+    background: white;
+}
+
+a{
+    text-align: center;
+    color: yellow;
+   
+}
+
+button{
+    margin-left: 550px;
+    background: red;
+    color: yellow;
+}

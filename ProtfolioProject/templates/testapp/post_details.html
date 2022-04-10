@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% extends 'testapp/base.html' %}
+{% load static %}
+
+ 
+{% block body_block %}
+<link rel="stylesheet" type="text/css"  href="{% static 'css/details.css' %}">
+<div class="contaier">
+<h1 >{{post.title}}</h1>
+<p id="pg">  By {{post.author|title}} </p>
+ 
+<p >{{post.body|linebreaks}} </p>
+
+<button>
+    <a href="">VIEW CODE</a>
+</button>
+
+
+</div>
+
+{% endblock %}
+
+
+ 
+ 

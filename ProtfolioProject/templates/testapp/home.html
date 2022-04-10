@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+{% extends 'testapp/base.html' %}
+{% load static %}
+
+<link rel="stylesheet" type="text/css"  href="{% static 'css/home.css' %}">
+
+
+{% block body_block %}
+<div class="container">
+<div class="jumbotron">
+    <h1 class="display-4">HELLO,I AM PRIYBARAT DALBEHERA</h1>
+    <p class="lead">“When you have a dream, you've got to grab it and never let go.</p>
+    <hr class="my-4">
+     
+    <a class="btn btn-primary btn-lg" href="/about" role="button">HIRE ME</a>&nbsp;&nbsp;
+    <a class="btn btn-primary btn-lg" href="https://drive.google.com/uc?export=download&id=15CbJKAMrt36aUqHa0WkXZaRFePJ0or6m" role="button">VIEW CV</a>
+  </div>
+</div>
+
+<div class="project" id="sec2">
+    <h1>PROJECTS</h1>
+</div>
+
+
+
+
+
+<div class="projecttext">
+  {% for post in post_list %}
+  <a href="{{post.get_absolute_url}}"><h2>{{post.title}}</h2></a>
+   by {{post.author|title}}
+   {{post.body|truncatewords:30|linebreaks}}
+   
+ 
+  {% endfor %}
+</div>
+
+
+
+
+
+
+
+<!-- <div class="contact">
+    <h1>CONTACT</h1>
+</div>
+
+<div class="contacttext">
+    <form method='post'>
+      {{form.as_p}}
+      {% csrf_token %}
+      <input type="submit" value="SEND">
+    </form>
+</div> -->
+
+<footer>
+<div class="social">
+  <h1>SOCIAL</h1>
+</div>
+<div class="icon">
+  <a href="https://www.facebook.com/priyabrat.dalbehera" target="_blank"><img src="{% static 'images/facebook.jpg' %}" alt="My image"></a>
+  <a href="https://github.com/ipriyabrat" target="_blank"><img src="{% static 'images/github.jpg' %}" alt="My image"></a>
+  <a href="https://www.linkedin.com/in/priyabrat-dalbehera-p521/" target="_blank"><img src="{% static 'images/linkdin.jpg' %}" alt="My image"></a>
+</div>
+</footer>
+
+
+
+{% endblock %}

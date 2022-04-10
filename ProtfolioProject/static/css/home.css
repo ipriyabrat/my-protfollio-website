@@ -1,0 +1,104 @@
+body{
+    font-family: 'Noto Serif', serif;
+    font-family: 'Rowdies', cursive;
+    font-family: 'Source Serif 4', serif;
+    font-family: 'Supermercado One', cursive;
+    font-family: 'Bebas Neue', cursive;
+    }
+
+html{
+        scroll-behavior: smooth;
+      }
+    
+    
+
+.container{
+    text-align: center;
+    padding-top: 10px;
+}
+
+.jumbotron{
+    text-align: center;
+}
+
+.project{
+    text-align: center;
+   
+    background-color: red;
+    color: yellow;
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+     
+}
+
+.project a{
+    text-decoration: dotted;
+
+}
+
+.projecttext{
+    padding-top: 30px;
+    background: red;
+    padding-left: 20px;
+    margin-top: 10px;
+   
+}
+.projecttext h2{
+    color: white;
+    text-align: center;
+
+}
+ 
+
+.contact{
+    text-align: center;
+
+    background-color: red;
+    color: yellow;
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+
+
+}
+
+
+.contacttext{
+    padding-top: 30px;
+}
+
+
+.social{
+    text-align: center;
+
+    background-color: red;
+    color: yellow;
+    border: 2px solid red;
+    border-radius: 10px;
+    width: 50%;
+    margin-left: 25%;
+    margin-top: 30px;
+}
+
+.icon{
+    background-color: black;
+    height:100px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+img{
+    height: 60px;
+     width: 45px;
+  
+      /* align-items: center; */
+      border-radius: 40%;
+     padding-top: 10px; 
+     margin-left: 90px;
+     margin: 30px;
+}
+ 
